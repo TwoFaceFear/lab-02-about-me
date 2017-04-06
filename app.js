@@ -74,7 +74,7 @@ var yep = true;
 // }
 //
 // for(var j = 0; j < states.length; j++) {
-//   if(stats[j] == guess {
+//   if(stats.trim().toLowercase()[j] == guess {
 //     alert('thats one of the 6! all possible answers were California, Utah, Idaho, New York, Nevada, and Oregon.')
 //       yep = false;
 //   }
@@ -84,11 +84,11 @@ var yep = true;
 //   alert('too bad!')
 // }
 
-alert(username + ' you got ' + yes + ' out of 7 answers correct!')
+alert(username + ' you got ' + yes + ' out of 7 answers correct!');
 
 
-console.log('the user answered', edm, 'to the edm question')
-console.log('the user answered', hipHop, 'to the hip-hop question')
-console.log('the user answered', metal, 'to the metal question')
-console.log('the user answered', punk, 'to the punk question')
-console.log('the user answered', country, 'to the country question')
+console.log('the user answered', edm, 'to the edm question');
+console.log('the user answered', hipHop, 'to the hip-hop question');
+console.log('the user answered', metal, 'to the metal question');
+console.log('the user answered', punk, 'to the punk question');
+console.log('the user answered', country, 'to the country question');
