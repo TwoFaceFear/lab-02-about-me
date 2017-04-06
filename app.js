@@ -1,88 +1,99 @@
 'use strict';
-
 var yes = 0;
+
+function question1() {
 var username = prompt('what is your name?');
 var edm = prompt('do you think i like edm?');
-if ( edm.trim().toLowerCase() == 'yes' || edm.trim().toLowerCase() == 'y'){
+if ( edm.trim().toLowerCase() == 'yes' || edm.trim().toLowerCase() == 'y') {
   alert('the song has to be unique for me to like it.');
   yes++;
 } else {
   alert('eh, its okay.');
 }
-
+}
+function question2() {
 var hipHop = prompt('do you think i like hip-hop?');
-if ( hipHop.trim().toLowerCase() == 'yes' || hipHop.trim().toLowerCase() == 'y'){
+if ( hipHop.trim().toLowerCase() == 'yes' || hipHop.trim().toLowerCase() == 'y') {
   alert('kinda the same as edm, the song has to be unique.');
-  yes++
+  yes++;
 } else {
   alert('still just okay.');
 }
+}
 
+function question3 () {
 var metal = prompt('do you think i like metal?');
-if ( metal.trim().toLowerCase() == 'yes' || metal.trim().toLowerCase() == 'y'){
+if ( metal.trim().toLowerCase() == 'yes' || metal.trim().toLowerCase() == 'y') {
   alert('thats my go to!');
   yes++;
 } else {
   alert('youre dead wrong!');
 }
+}
 
+function question4 () {
 var punk = prompt('do you think i like punk?');
-if ( punk.trim().toLowerCase() == 'yes' || punk.trim().toLowerCase() == 'y'){
+if ( punk.trim().toLowerCase() == 'yes' || punk.trim().toLowerCase() == 'y') {
   alert('my second choice in my music lineup');
   yes++;
 } else {
   alert('incorrect, i love me some punk music!');
 }
+}
 
+function question5 () {
 var country = prompt('do you think i like country?');
-if ( country.trim().toLowerCase() == 'no' || country.trim().toLowerCase() == 'n'){
+if ( country.trim().toLowerCase() == 'no' || country.trim().toLowerCase() == 'n') {
   alert('nice guess!');
-  yes++
+  yes++;
 } else {
   alert('i cant stand the stuff.');
 }
+}
 
+function question6 () {
 var comp = '2';
 var correct = true;
-
 var times;
-for (var i = 4; i > 0 && correct ; i--){
+for (var i = 4; i > 0 && correct ; i--) {
   times = prompt('how many computers do i own?');
-
-if (times == comp){
-  alert('not as many as id like to!');
-  yes++;
-  correct = false;
-} else if (times == 1){
-  alert('you are out of chances!');
-} else {
-  alert('guess again!');
+  if (times == comp) {
+    alert('not as many as id like to!');
+    yes++;
+    correct = false;
+  } else if (times == 1) {
+    alert('you are out of chances!');
+  } else {
+    alert('guess again!');
+  }
 }
 }
 
-var states = ['california', 'utah', 'idaho', 'new york', 'nevada','oregon'];
-var yep = true;
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
 
-// var guess;
-// for (var log = 6; log > 0 && yep ; log--){
-//   times = prompt('guess a state ive traveled to');
+
+// var states = ['california', 'utah', 'idaho', 'new york', 'nevada','oregon'];
+// var notDone = true;
 //
-// if (log == 0){
-//   guess = prompt('ive been there for sure!');
-// } else {
-//   guess = alert('you are out of chances');
-// }
 //
-// for(var j = 0; j < states.length; j++) {
-//   if(stats.trim().toLowercase()[j] == guess {
-//     alert('thats one of the 6! all possible answers were California, Utah, Idaho, New York, Nevada, and Oregon.')
-//       yep = false;
+// for (var log = 6; log > 0 && notDone ; log--) {
+//   var guess = prompt('guess a state ive traveled to');
+//   for (var j = 0; j < states.length; j++) {
+//     if (guess.trim().toLowerCase() == states[j]) {
+//       alert('thats one of the 6! all possible answers were California, Utah, Idaho, New York, Nevada, and Oregon.');
+//       notDone = false;
+//       //yes++;
+//     }
 //   }
 // }
-// }
-// if (yep == true){
-//   alert('too bad!')
-// }
+//
+//
+
 
 alert(username + ' you got ' + yes + ' out of 7 answers correct!');
 
