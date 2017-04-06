@@ -1,9 +1,8 @@
 body {
-  font-family: Helvetica;
+  font-family: Verdana;
   font-weight: bold;
   background-color: #D4EEE4;
-  padding-left: 750px;
-
+  text-align: center;
 }
 
 h1 {
@@ -21,5 +20,4 @@ p {
 }
 
 li {
-
 }
