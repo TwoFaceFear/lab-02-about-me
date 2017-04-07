@@ -11,6 +11,7 @@ if ( edm.trim().toLowerCase() == 'yes' || edm.trim().toLowerCase() == 'y') {
   alert('eh, its okay.');
 }
 }
+
 function question2() {
 var hipHop = prompt('do you think i like hip-hop?');
 if ( hipHop.trim().toLowerCase() == 'yes' || hipHop.trim().toLowerCase() == 'y') {
@@ -61,7 +62,7 @@ for (var i = 4; i > 0 && correct ; i--) {
     alert('not as many as id like to!');
     yes++;
     correct = false;
-  } else if (times == 1) {
+  } else if (i == 0) {
     alert('you are out of chances!');
   } else {
     alert('guess again!');
@@ -77,22 +78,20 @@ question5();
 question6();
 
 
-// var states = ['california', 'utah', 'idaho', 'new york', 'nevada','oregon'];
-// var notDone = true;
-//
-//
-// for (var log = 6; log > 0 && notDone ; log--) {
-//   var guess = prompt('guess a state ive traveled to');
-//   for (var j = 0; j < states.length; j++) {
-//     if (guess.trim().toLowerCase() == states[j]) {
-//       alert('thats one of the 6! all possible answers were California, Utah, Idaho, New York, Nevada, and Oregon.');
-//       notDone = false;
-//       //yes++;
-//     }
-//   }
-// }
-//
-//
+var states = ['california', 'utah', 'idaho', 'new york', 'nevada','oregon'];
+var notDone = true;
+for (var log = 6; log > 0 && notDone ; log--) {
+  var guess = prompt('guess a state ive traveled to');
+  for (var j = 0; j < states.length; j++) {
+    if (guess.trim().toLowerCase() == states[j]) {
+      alert('thats one of the 6! all possible answers were California, Utah, Idaho, New York, Nevada, and Oregon.');
+      notDone = false;
+      yes++;
+    }
+  }
+}
+
+
 
 
 alert(username + ' you got ' + yes + ' out of 7 answers correct!');
