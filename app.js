@@ -70,14 +70,7 @@ for (var i = 4; i > 0 && correct ; i--) {
 }
 }
 
-question1();
-question2();
-question3();
-question4();
-question5();
-question6();
-
-
+function question7() {
 var states = ['california', 'utah', 'idaho', 'new york', 'nevada','oregon'];
 var notDone = true;
 for (var log = 6; log > 0 && notDone ; log--) {
@@ -90,13 +83,19 @@ for (var log = 6; log > 0 && notDone ; log--) {
     }
   }
 }
+}
 
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7();
 
 
 
 alert(username + ' you got ' + yes + ' out of 7 answers correct!');
-
-
 console.log('the user answered', edm, 'to the edm question');
 console.log('the user answered', hipHop, 'to the hip-hop question');
 console.log('the user answered', metal, 'to the metal question');
