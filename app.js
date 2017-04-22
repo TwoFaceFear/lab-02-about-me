@@ -59,9 +59,13 @@ var times;
 for (var i = 4; i > 0 && correct ; i--) {
   times = prompt('how many computers do i own?');
   if (times == comp) {
-    alert('not as many as id like to!');
+    alert('not as many as id like to! but you are right!');
     yes++;
     correct = false;
+  } else if (times < comp) {
+    alert ('too low guess higher!')
+  } else if (times > comp) {
+    alert('too high guess lower!')
   } else if (i == 0) {
     alert('you are out of chances!');
   } else {
